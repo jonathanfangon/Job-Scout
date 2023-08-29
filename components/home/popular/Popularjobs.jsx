@@ -11,12 +11,12 @@ import { useRouter } from 'expo-router';
 import styles from './popularjobs.style';
 import { COLORS, SIZES } from '../../../constants';
 import PopularJobCard from '../../common/cards/popular/PopularJobCard';
-import useFetch from '../../../hook/useFetch';
+import useFetcher from '../../../hook/useFetcher';
 
 const Popularjobs = () => {
   const router = useRouter();
 
-  const { data, isLoading, error } = useFetch('search', {
+  const { data, isLoading, error } = useFetcher('search', {
     query: 'React developer',
     num_pages: 1,
   });
