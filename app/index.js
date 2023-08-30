@@ -26,7 +26,12 @@ const Home = () => {
           headerRight: () => (
             <ScreenHeaderBtn iconUrl={images.profile} dimension='100%' />
           ),
-          headerTitle: '',
+          headerTitle: 'Job Scout',
+          headerTitleAlign: 'center',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+            fontSize: '32px',
+          },
         }}
       />
       <ScrollView showsVerticalScrollIndicator={false}>
